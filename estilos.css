@@ -183,7 +183,7 @@ h1 {
 
 .grid_content {
     display: grid;
-    grid-template-columns: 50% 16% 33%;
+    grid-template-columns: 45% 23% 32%;
 }
 
 .arrows_size {
