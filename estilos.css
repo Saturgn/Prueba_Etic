@@ -1,0 +1,343 @@
+@keyframes flechaR {
+    from {
+        position: relative;
+        left: 0%;
+        animation-timing-function: linear;
+    }
+
+    to {
+        animation-timing-function: linear;
+        position: relative;
+        left: 20%;
+    }
+}
+
+@keyframes flechaL {
+    from {
+        position: relative;
+        right: 0%;
+        animation-timing-function: linear;
+    }
+
+    to {
+        position: relative;
+        right: 20%;
+        animation-timing-function: linear;
+    }
+}
+
+@keyframes cerrar {
+    from {
+        position: relative;
+        right: 0px;
+        background-color: white;
+        margin-bottom: 60px;
+
+    }
+
+    to {
+        position: relative;
+        right: 0px;
+        background-color: black;
+        margin-bottom: 10px;
+    }
+}
+
+@keyframes botonAbrir {
+
+    from {
+        background-color: black;
+    }
+
+    to {
+        background-color: white;
+    }
+}
+
+body {
+    background-color: black;
+    background-image: url('images/background3.webp');
+    background-repeat: no-repeat;
+    background-size: 82vw ;
+    background-position: 50%;
+}
+
+.grid_body {
+    display: grid;
+
+}
+
+h1 {
+    font-family: "Fugaz One", serif;
+    font-weight:bolder;
+    color: gold;
+    -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: rgb(0, 81, 255);
+    text-align:center;
+    font-size: 3rem;
+    position: relative;
+    right: 13%;
+}
+
+.cerrarIco {
+    width: 32px;
+    justify-self: center;
+}
+
+.color_blue {
+    background-color: #b3effe;
+}
+
+
+.height_screen {
+    height: 500px;
+}
+
+.grid_main {
+    display: grid;
+    grid-template-columns: 12% 49% 15.5%;
+    align-content: center;
+    align-items: end;
+    
+}
+
+.grid_screen {
+    display: grid;
+    grid-template-rows: 20% 40% 25%;
+}
+
+.marginDesc {
+    margin: 5% 20% 0;
+    text-align: center;
+}
+
+.displayClose {
+    justify-self: center;
+}
+
+.cerrarBoton {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(246, 75, 75);
+    color: white;
+    font-family: "Comic Neue", cursive;
+    cursor: pointer;
+}
+
+
+
+.abrirPokedex {
+    display: flex;
+    justify-content:flex-start;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    font-family: "Comic Neue", cursive;
+    cursor: pointer;
+    position: absolute;
+    right: 60%;
+}
+
+.abrirPokedex:hover {
+    animation-name: botonAbrir;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+}
+
+.cerrarBoton:hover {
+    background-color: black;
+    animation-name: cerrar;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.grid_infoPok {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+}
+
+.vertical_align_center {
+    align-items: end;
+    align-self: end;
+}
+
+.font_pixel {
+
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+.grid_images {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.size_image {
+    width: 45%;
+}
+
+.title {
+    font-size: 50px;
+    text-align: center;
+}
+
+.grid_content {
+    display: grid;
+    grid-template-columns: 45% 23% 32%;
+}
+
+.arrows_size {
+
+    width: 50px;
+    cursor: pointer;
+}
+
+.right_arrow {
+    justify-self: center;
+    align-items: center;
+}
+
+.right_arrow:hover {
+    justify-self: center;
+    align-items: center;
+}
+
+.left_arrow {
+    justify-self: center;
+    align-items: center;
+}
+
+
+.left_arrow:hover {
+    justify-self: center;
+    align-items: center;
+}
+
+.pokdex_button {
+    border-radius: 100%;
+    align-self: center;
+    margin-top: 70%;
+    width: 60%;
+    height: 30%;
+}
+
+.normalText {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fire {
+    border-radius: 20px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    background-color:orange;
+}
+
+.water {
+    border-radius: 20px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #00B0F0;
+}
+
+.electric {
+    border-radius: 20px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: yellow;
+}
+
+.flying {
+    border-radius: 20px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #9966FF;
+    color:white;
+}
+
+.fighting {
+    border-radius: 20px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: brown;
+    color:white;
+}
+
+.ground {
+    border-radius: 20px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #CC3300;
+    color:white;
+}
+
+.grass {
+    border-radius: 20px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: green;
+    color:white;
+}
+
+.poison {
+    border-radius: 20px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #6600CC;
+    color:white;
+}
+
+
+.normal {
+    border-radius: 20px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+    color:white;
+}
+
+.visibilityHidden {
+    visibility: hidden;
+}
+
+.isVisible {
+    visibility: visible;
+}
+
+.lineHeight {
+    line-height: 2.5;
+}
+
+
+
+.flechaI:hover {
+
+    animation-name: flechaL;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s
+}
+
+.flechaD:hover {
+    animation-name: flechaR;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s
+}
+.steel {
+    border-radius: 20px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #8a9aa8;
+    color:white;
+}
