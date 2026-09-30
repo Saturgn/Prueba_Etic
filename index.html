@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <script src="logica.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Fugaz+One&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body class="grid_body">
+    <header>
+        <h1>Pokédex</h1>
+    </header>
+    <main class="grid_main">
+        <div></div>
+        <section id="screen" class="color_blue height_screen grid_screen">
+            
+            <article class="font_pixel title" id="title_Pokemon"></article>
+            <article class="grid_infoPok font_pixel">
+                <div class="vertical_align_center left_arrow">
+                    <img src="images/arrow-left.svg" class="visibilityHidden" id="left" alt="Anterior">
+                </div>
+                <div class="grid_content">
+                    <div>
+                        <img id="back" class="size_image" alt="Espalda del Pokémon">
+                        <img id="front" class="size_image" alt="Frente del Pokémon">
+                    </div>
+                    <div id="tipos"></div>
+                    <div>
+                        <div>Altura: <span id="altura" class="normalText"></span> m</div>
+                        <div>Peso: <span id="peso" class="normalText"></span> kg</div>
+                    </div>
+                    
+                </div>
+                <div class="vertical_align_center right_arrow">
+                    <img src="images/arrow-right.svg" class="visibilityHidden" id="right" alt="Siguiente">
+                </div>
+            </article>
+            <article class="font_pixel marginDesc" id="descripcion"></article>
+            <article class="displayClose" id="displayClose">
+                <button id="cerrar" class="cerrarBoton">Cerrar Pokédex</button>
+            </article>
+            
+        </section>
+        <section id="abrirBoton"></section>
+    </main>
+</body>
+</html>
